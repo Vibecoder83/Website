@@ -11,12 +11,12 @@ function loadComponent(id, file) {
 }
 
 // Load all sections
-loadComponent("header", "components/header.html");
-loadComponent("hero", "components/hero.html");
-loadComponent("preview", "components/preview.html");
-loadComponent("services", "components/services.html");
-loadComponent("portfolio", "components/portfolio.html");
-loadComponent("process", "components/process.html");
-loadComponent("reviews", "components/reviews.html");
-loadComponent("cta", "components/cta.html");
-loadComponent("footer", "components/footer.html");
+loadComponent("header", "./components/header.html");
+loadComponent("hero", "./components/hero.html");
+loadComponent("preview", "./components/preview.html");
+loadComponent("services", "./components/services.html");
+loadComponent("portfolio", "./components/portfolio.html");
+loadComponent("process", "./components/process.html");
+loadComponent("reviews", "./components/reviews.html");
+loadComponent("cta", "./components/cta.html");
+loadComponent("footer", "./components/footer.html");
