@@ -1,3 +1,5 @@
+document.body.innerHTML = "<h1 style='color:red'>JS IS RUNNING</h1>";
+
 function loadComponent(id, file) {
   fetch(file)
     .then(res => {
