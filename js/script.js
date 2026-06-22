@@ -23,3 +23,14 @@ const components = [
 ];
 
 components.forEach(([id, file]) => loadComponent(id, file));
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  document.querySelectorAll('[id]').forEach(section => {
+    if (window.scrollY >= section.offsetTop - 80) current = section.id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
