@@ -29,6 +29,10 @@ window.addEventListener('scroll', () => {
   document.querySelectorAll('[id]').forEach(section => {
     if (window.scrollY >= section.offsetTop - 80) current = section.id;
   });
+
+  const fallback = {'process': 'portfolio'};
+  if (fallback[current]) current = fallback[current];
+
   document.querySelectorAll('.nav-links a').forEach(a => {
     a.classList.remove('active');
     if (a.getAttribute('href') === '#' + current) a.classList.add('active');
