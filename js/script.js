@@ -38,3 +38,10 @@ window.addEventListener('scroll', () => {
     if (a.getAttribute('href') === '#' + current) a.classList.add('active');
   });
 });
+
+function switchTab(tab) {
+  document.getElementById('frame-before').classList.toggle('hidden', tab !== 'before');
+  document.getElementById('frame-after').classList.toggle('hidden', tab !== 'after');
+  document.getElementById('tab-before').classList.toggle('active', tab === 'before');
+  document.getElementById('tab-after').classList.toggle('active', tab === 'after');
+}
